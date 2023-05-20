@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Мои прочитанные книги</title>
+</head>
+<style>
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: #007ACC;
+  color: #fff;
+}
+
+h2, h3 {
+  margin-top: 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: #007ACC;
+  padding: 10px;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+form {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form label {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input[type=text], form input[type=date] {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+form input[type=submit] {
+  background-color: #007ACC;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007ACC;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  form input[type=text], form input[type=date] {
+    width: 100%;
+  }
+}
+</style>
+<body>
+ <h1>Мои прочитанные книги</h1>
+
+ <h2>План прочтения</h2>
+ 
+ <form>
+  <label for="book-title">Название книги:</label>
+  <input type="text" id="book-title" name="book-title"><br>
+
+  <label for="author">Автор:</label>
+  <input type="text" id="author" name="author"><br>
+
+  <label for="date">Дата прочтения:</label>
+  <input type="date" id="date" name="date"><br>
+
+  <input type="submit" value="Добавить">
+ </form>
+
+ <h2>Навигация</h2>
+
+ <ul>
+  <li><a href="#read-books">Прочитанные книги</a></li>
+  <li><a href="#unread-books">Непрочитанные книги</a></li>
+ </ul>
+
+ <h2 id="read-books">Прочитанные книги</h2>
+
+ <table>
+  <thead>
+   <tr>
+    <th>Название</th>
+    <th>Автор</th>
+    <th>Дата прочтения</th>
+    <th>Заметки</th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+    <td>Мастер и Маргарита</td>
+    <td>Михаил Булгаков</td>
+    <td>01.01.2020</td>
+    <td>Очень понравилась книга, люблю фантастику</td>
+   </tr>
+   <tr>
+    <td>1984</td>
+    <td>Джордж Оруэлл</td>
+    <td>15.03.2020</td>
+    <td>Читала на одном дыхании, интересно и страшно одновременно</td>
+   </tr>
+  </tbody>
+ </table>
+
+ <h2 id="unread-books">Непрочитанные книги</h2>
+
+ <ul>
+  <li>Анна Каренина (Толстой)</li>
+  <li>Грозовой перевал (Бронте)</li>
+  <li>Мастерство убеждения (Джонс)</li>
+ </ul>
+
+ <h2>Подборки</h2>
+
+ <ul>
+  <li><a href="#fiction">Художественная литература</a></li>
+  <li><a href="#non-fiction">Научно-популярные книги</a></li>
+ </ul>
+
+ <h3 id="fiction">Художественная литература</h3>
+
+ <ul>
+  <li>Мастер и Маргарита (Булгаков)</li>
+  <li>Анна Каренина (Толстой)</li>
+  <li>Преступление и наказание (Достоевский)</li>
+ </ul>
+
+ <h3 id="non-fiction">Научно-популярные книги</h3>
+
+ <ul>
+  <li>Краткая история времени (Хокинг)</li>
+  <li>Черные дыры и молодые вселенные (Кип Торн)</li>
+  <li>Самоорганизация нелинейных систем (Хейльманн и Янг)</li>
+ </ul>
+
+ <h2>Заметки</h2>
+
+ <ul>
+  <li>Купить книгу "Мастерство убеждения "</li>
+  <li>Найти книгу "Грозовой перевал" в библиотеке</li>
+ </ul>
+
+</body>
+</html>
