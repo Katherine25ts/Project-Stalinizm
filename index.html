@@ -1,198 +1,80 @@
-<!DOCTYPE html>
-<html>
-<head>
- <title>Мои прочитанные книги</title>
-</head>
-<style>
-{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-h1 {
-  text-align: center;
-  padding: 20px;
-  background-color: #007ACC;
-  color: #fff;
-}
-
-h2, h3 {
-  margin-top: 30px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  background-color: #007ACC;
-  padding: 10px;
-}
-
-nav ul li {
-  margin-right: 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 30px;
-}
-
-table th, table td {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-table tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-form {
-  margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-form label {
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-form input[type=text], form input[type=date] {
-  width: 48%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-form input[type=submit] {
-  background-color: #007ACC;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 3px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-ul {
-  list-style: none;
-  padding-left: 20px;
-  margin-top: 30px;
-}
-
-ul li {
-  margin-bottom: 10px;
-}
-
-a {
-  color: #007ACC;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-@media screen and (max-width: 600px) {
-  form input[type=text], form input[type=date] {
-    width: 100%;
-  }
-}
-</style>
-<body>
- <h1>Мои прочитанные книги</h1>
-
- <h2>План прочтения</h2>
- 
- <form>
-  <label for="book-title">Название книги:</label>
-  <input type="text" id="book-title" name="book-title"><br>
-
-  <label for="author">Автор:</label>
-  <input type="text" id="author" name="author"><br>
-
-  <label for="date">Дата прочтения:</label>
-  <input type="date" id="date" name="date"><br>
-
-  <input type="submit" value="Добавить">
- </form>
-
- <h2>Навигация</h2>
-
- <ul>
-  <li><a href="#read-books">Прочитанные книги</a></li>
-  <li><a href="#unread-books">Непрочитанные книги</a></li>
- </ul>
-
- <h2 id="read-books">Прочитанные книги</h2>
-
- <table>
-  <thead>
-   <tr>
-    <th>Название</th>
-    <th>Автор</th>
-    <th>Год издания</th>
-    <th>Издательство</th>
-    <th>Заметки</th>
-    <th>Кол-во страниц</th>
-   </tr>
-  </thead>
-  <tbody>
-   <tr>
-    <td>Красный террор. История сталинизма»</td>
-    <td> Й. Баберовски</td>
-    <td>2007</td>
-    <td>Российская политическая энциклопедия</td>
-    <td> на основе рассекреченных материалов российских архивов, 
-      воспоминаний политических деятелей и рядовых свидетелей и участников 
-      событий Йорг Баберовски воссоздает в своей книге широкую панораму этой 
-      мрачной эпохи. Уделяя немало внимания психологическим портретам 
-      И.В.Сталина и его сподвижников, Й.Баберовски рисует ужасающую и 
-      захватывающую картину того, как мечта большевиков о "новом человеке" 
-      выродилась в кровавый террор.</td>
-      <td>278</td>
-   </tr>
-   <tr>
-    <td>1984</td>
-    <td>Джордж Оруэлл</td>
-    <td>15.03.2020</td>
-    <td>Читала на одном дыхании, интересно и страшно одновременно</td>
-   </tr>
-  </tbody>
- </table>
-
- <h2 id="unread-books">Непрочитанные книги</h2>
-
- <ul>
-  <li>Анна Каренина (Толстой)</li>
-  <li>Грозовой перевал (Бронте)</li>
-  <li>Мастерство убеждения (Джонс)</li>
- </ul>
-
- <h2>Подборки</h2>
-
- <ul>
-  <li><a href="#fiction">Историческая литература</a></li>
-  <li><a href="#non-fiction">Исторические источники</a></li>
- </ul>
-
- <h2>Заметки</h2>
-
- <ul>
-  <li>Купить книгу "Мастерство убеждения "</li>
-  <li>Найти книгу "Грозовой перевал" в библиотеке</li>
- </ul>
-
-</body>
-</html>
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>Приложение для ведения прочитанных книг</title> 
+        <link rel="stylesheet" href="style.css"> 
+        <script src="script.js"></script>
+    </head> 
+    <body>
+    <!-- Форма регистрации и авторизации -->
+    <div class="login-container">
+      <h1>Авторизация</h1>
+      <form action="#">
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" name="username" placeholder="Введите имя пользователя">
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" placeholder="Введите пароль">
+        <input type="submit" value="Войти">
+      </form>
+      <p>Еще не зарегистрированы? <a href="#">Зарегистрироваться</a></p>
+    </div>
+    
+    <!-- Страница профиля пользователя -->
+    <div class="profile-container">
+      <h1>Мой профиль</h1>
+      <p>Добро пожаловать, Иван Иванов!</p>
+      <p>Вы зарегистрировались: 1 января 2022 г.</p>
+      <a href="#" class="button">Выход</a>
+    </div>
+    
+    <!-- Страница со списком книг -->
+    <div class="book-list-container">
+      <h1>Список книг</h1>
+      <ul class="book-list">
+        <li>
+          <a href="#">
+            <h2>Красный террор. История сталинизма</h2>
+            <p class="author">Й. Баберовски</p>
+          </a>
+          <span class="status read">Прочитано</span>
+          <a href="#" class="bookmark">&#128279;</a>
+        </li>
+        <li>
+          <a href="#">
+            <h2>Враг есть везде. Сталинизм на Кавказе</h2>
+            <p class="author">Й. Баберовски</p>
+          </a>
+          <span class="status unread">Не прочитано</span>
+          <a href="#" class="bookmark">&#128279;</a>
+        </li>
+        <li>
+          <a href="#">
+            <h2>Сталинизм в советской провинции 1937-1938 гг. Массовая 
+                операция на основе приказа №00447</h2>
+            <p class="author">М. Юнге</p>
+          </a>
+          <span class="status unread">Не прочитано</span>
+          <a href="#" class="bookmark">&#128279;</a>
+        </li>
+      </ul>
+      <a href="#" class="button">Создать новую подборку</a>
+    </div>
+    
+    <!-- Страница с информацией о книге -->
+    <div class="book-info-container">
+      <h1>Красный террор. История сталинизма</h1>
+      <p class="author">Й. Баберовски</p>
+      <img src="book-cover.jpg" alt="Красный террор. История сталинизма">
+      <p class="description">на основе рассекреченных материалов российских архивов, 
+        воспоминаний политических деятелей и рядовых свидетелей и участников 
+        событий Йорг Баберовски воссоздает в своей книге широкую панораму этой 
+        мрачной эпохи. Уделяя немало внимания психологическим портретам 
+        И.В.Сталина и его сподвижников, Й.Баберовски рисует ужасающую и 
+        захватывающую картину того, как мечта большевиков о "новом человеке" 
+        выродилась в кровавый террор.</p>
+      <textarea rows="8" cols="50" placeholder="Добавить заметку"></textarea>
+      <a href="#" class="button">Добавить в прочитанные</a>
+    </div>
+    </body> 
+    </html>

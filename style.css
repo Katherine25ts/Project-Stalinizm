@@ -1,0 +1,63 @@
+/* базовый стиль */ body { font-family: sans-serif; margin: 0; padding: 0; }
+
+/* стиль футера */ footer { background-color: #222; color: #fff; padding: 20px; text-align: center; }
+
+/* стиль для кнопок */ .button { background-color: #1c7cd5; border: none; border-radius: 5px; color: #fff; cursor: pointer; display: inline-block; font-size: 16px; margin-top: 10px; padding: 10px 20px; text-align: center; text-decoration: none; }
+
+.button:hover { background-color: #135ba1; }
+
+/* стиль для ссылок */ a { color: #1c7cd5; text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+/* стиль для формы регистрации и авторизации */ .login-container { background-color: #f1f1f1; border-radius: 10px; margin: 50px auto; max-width: 500px; padding: 20px; text-align: center; }
+
+.login-container h1 { font-size: 24px; margin-bottom: 20px; }
+
+.login-container label { display: block; font-size: 16px; margin-top: 20px; text-align: left; }
+
+.login-container input[type=text], .login-container input[type=password] { border: none; border-radius: 5px; box-sizing: border-box; font-size: 16px; margin-top: 10px; padding: 10px; width: 100%; }
+
+/* стиль для страницы профиля пользователя */ .profile-container { margin: 50px auto; max-width: 500px; padding: 20px; text-align: center; }
+
+.profile-container h1 { font-size: 24px; margin-bottom: 20px; }
+
+.profile-container p { font-size: 16px; margin-bottom: 10px; }
+
+/* стиль для списка книг */ .book-list-container { margin: 50px auto; max-width: 800px; text-align: center; }
+
+.book-list-container h1 { font-size: 24px; margin-bottom: 20px; }
+
+.book-list { list-style: none; margin: 0; padding: 0; }
+
+.book-list li { background-color: #f1f1f1; border-radius: 5px; display: flex; justify-content: space-between; margin-bottom: 10px; padding: 20px; }
+
+.book-list li a { text-decoration: none; }
+
+.book-list li a:hover { text-decoration: underline; }
+
+.book-list li h2 { font-size: 20px; margin-bottom: 10px; }
+
+.book-list li p.author { font-size: 16px; margin-bottom: 10px; }
+
+.book-list li span.status { border-radius: 5px; color: #fff; font-size: 16px; padding: 5px 10px; }
+
+.book-list li span.read { background-color: green; }
+
+.book-list li span.unread { background-color: red; }
+
+.book-list li a.bookmark { font-size: 20px; margin-left: 10px; }
+
+/* стиль для страницы с информацией о книге */ .book-info-container { margin: 50px auto; max-width: 800px; text-align: center; }
+
+.book-info-container h1 { font-size: 24px; margin-bottom: 20px; }
+
+.book-info-container p.author { font-size: 16px; margin-bottom: 10px; }
+
+.book-info-container img { margin-top: 20px; max-width: 300px; }
+
+.book-info-container p.description { font-size: 16px; margin-top: 20px; }
+
+.book-info-container textarea { border: none; border-radius: 5px; box-sizing: border-box; font-size: 16px; margin-top: 20px; padding: 10px; resize: none; width: 100%; }
+
+/* скрытие элементов */ .hide { display: none; }
